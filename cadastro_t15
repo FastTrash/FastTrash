@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .row input {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro</h2>
+        <p>Olá [Nome Completo],<br>Insira mais algumas informações essenciais :)</p>
+
+        <label for="logradouro">Logradouro</label>
+        <input type="text" id="logradouro" name="logradouro" placeholder="Rua Exemplo">
+
+        <div class="row">
+            <div>
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero" placeholder="123">
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade Exemplo">
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <label for="bairro">Bairro</label>
+                <input type="text" id="bairro" name="bairro" placeholder="Bairro Exemplo">
+            </div>
+            <div>
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade Exemplo">
+            </div>
+        </div>
+
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha" placeholder="********">
+
+        <label for="repita-senha">Repita a senha</label>
+        <input type="password" id="repita-senha" name="repita-senha" placeholder="********">
+
+        <button type="submit">Cadastrar</button>
+    </div>
+</body>
+</html>
