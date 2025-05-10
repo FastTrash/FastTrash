@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+    <title>CADASTRO</title>
+</head>
+<body>
+<H1> Olá [nome completo]
+    <h2>Confirme o código enivado para o seu celular :) </h2> 
+
+<p> insira o codigo eniado via SMS para o número </p>
+<label for="codigo">Código:</label><br>
+<input type="text" id="codigo" name="codigo" placeholder="Digite o código"><br><br>
+
+<button type="submit">Confirmar</button>
+
+
+
+
+
+</body>
