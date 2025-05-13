@@ -184,10 +184,10 @@ body {
 
 .lgrande {
   display: block;
-  margin-top: 50px;
+  margin-top: 0.5em;
   margin-bottom: 0.5em;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 25px;
+  margin-right: 25px;
   border-style: solid;
   border-width: 1px;
   border-color: darkgrey;
@@ -212,4 +212,20 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 130px;
+}
+
+.butperfil {
+  background-color: white;
+  border: none;
+  color: black;
+  padding: 15px;
+  padding-left: 50px;
+  display: block;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  font-weight: 950;
+  font-size: x-large;
+  text-align: left;
 }
