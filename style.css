@@ -340,3 +340,17 @@ body {
   font-weight: 700;
   border: 0;
 }
+
+.coletas2 {
+  width: 320px;
+  height: 115px;
+  border: 3px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  align-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: gainsboro;
+}
