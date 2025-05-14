@@ -230,17 +230,6 @@ body {
   text-align: left;
 }
 
-.footer {
-  line-height: px;
-  text-align: center;
-  background-color: gainsboro;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 70px;
-}
-
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -286,5 +275,68 @@ body {
   float: right;
   width: 35px;
   height: 35px;
+  float: right;
+}
+
+.lcoleta {
+  width: 75px;
+  height: 75px;
   display: block;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+.title {
+  margin: 0px;
+  float: right;
+  padding-top: 6%;
+  font-size: 190%;
+  padding-right: 3%;
+}
+
+.footer {
+  line-height: px;
+  text-align: center;
+  background-color: gainsboro;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+  min-height: 70px;
+}
+
+.header {
+  line-height: px;
+  text-align: right;
+  background-color: gainsboro;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: fixed;
+  left: 0;
+  top: 0px;
+  width: 100%;
+}
+
+.coletas {
+  width: 320px;
+  height: 50px;
+  border: 3px solid black;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  align-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+  background-color: gainsboro;
+}
+
+.pesquisa {
+  padding-top: 6%;
+  font-size: 125%;
+  padding-right: 3%;
+  font-weight: 700;
+  border: 0;
 }
