@@ -229,3 +229,62 @@ body {
   font-size: x-large;
   text-align: left;
 }
+
+.footer {
+  line-height: px;
+  text-align: center;
+  background-color: gainsboro;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 70px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 30.77%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.imgf {
+  width: 55px;
+  height: 55px;
+}
+
+.cfooter {
+  font-weight: 900;
+  text-align: center;
+  margin-top: 0px;
+  display: block;
+  font-size: 95%;
+}
+
+.rcoleta {
+  width: 320px;
+  height: 50px;
+  border: 3px solid black;
+  border-radius: 10px / 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  align-content: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.pxcoldireita {
+  float: right;
+  width: 35px;
+  height: 35px;
+  display: block;
+}
