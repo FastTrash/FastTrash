@@ -7,34 +7,46 @@
     <title>Login Pessoa Física</title>
 </head>
 <body>
+    <!-- Exibe a logo da aplicação no topo, importante para identidade visual -->
     <img class="logo" src="imgs/logo.jpeg" alt="Logo">
 
+    <!-- Título principal da página, indicando que esta é a tela de login -->
     <h1 class="titulo">Login</h1>
 
+    <!-- Campo para o usuário inserir seu CPF, com rótulo e placeholder explicativos.
+         O uso de classes facilita a adaptação visual para telas pequenas. -->
     <form>
         <label class="subtitulo" for="pf">CPF</label>
         <p><input class="cxtxt" type="text" name="pf" id="pf" placeholder="000.000.000-00"></p>
     </form>
 
+    <!-- Campo de senha. O campo é separado do CPF para melhor organização em dispositivos móveis. -->
     <form>
         <label class="subtitulo" for="senha">Senha</label>
-        <p><input class="cxtxt" type="text" name="senha" id="senha" placeholder="Insira sua Senha"></p>
+        <p><input class="cxtxt" type="password" name="senha" id="senha" placeholder="Insira sua Senha"></p>
     </form>
 
+    <!-- Texto para indicar a opção de lembrar a senha -->
     <p style="font-weight: 900;">Lembrar?</p>
 
+    <!-- Interruptor para lembrar a senha, visualmente amigável por causa do estilo de botão deslizante.
+         É fácil de interagir com o dedo em telas pequenas. -->
     <form>
         <label class="switch">
             <p><input type="checkbox" name="lsenha" id="lsenha"><span class="slider round"></span></p>
         </label>
     </form>
 
+    <!-- Botão para enviar o login. Redireciona para o menu da pessoa física após o login.
+         Botão está bem visível e grande o suficiente para toque em dispositivos móveis. -->
     <form action="menupf_t36.html">
         <p><input type="submit" value="Entrar" class="inicio" name="entrar" id="entrar"></p>
     </form>
 
+    <!-- Links úteis para usuários que esqueceram a senha ou ainda não têm conta.
+         O posicionamento usa espaços não quebráveis, que podem ser substituídos por CSS para responsividade mais precisa. -->
     &nbsp &nbsp<a href="esqsenha_tx.html" style="color: black;">Esqueceu sua senha?</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  
     <a href="cadastro_tx.html" style="color: black;">Cadastre-se!</a>
-    
 </body>
+
 </html>
