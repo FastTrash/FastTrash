@@ -7,34 +7,45 @@
     <title>Login CNPJ</title>
 </head>
 <body>
+    <!-- Exibe a logo no topo da tela, serve como identificação visual da aplicação -->
     <img class="logo" src="imgs/logo.jpeg" alt="Logo">
 
+    <!-- Título principal da página de login -->
     <h1 class="titulo">Login</h1>
 
+    <!-- Campo de entrada para o CNPJ, com rótulo descritivo acima.
+         A classe 'cxtxt' permite estilizar facilmente o campo para responsividade. -->
     <form>
         <label class="subtitulo" for="cnpj">CNPJ</label>
         <p><input class="cxtxt" type="text" name="cnpj" id="cnpj" placeholder="12.345.678/0001-00"></p>
     </form>
 
+    <!-- Campo de entrada para a senha, com rótulo descritivo acima. -->
     <form>
         <label class="subtitulo" for="senha">Senha</label>
-        <p><input class="cxtxt" type="text" name="senha" id="senha" placeholder="Insira sua Senha"></p>
+        <p><input class="cxtxt" type="password" name="senha" id="senha" placeholder="Insira sua Senha"></p>
     </form>
 
+    <!-- Texto chamando a atenção para a opção de lembrar a senha -->
     <p style="font-weight: 900;">Lembrar?</p>
 
+    <!-- Interruptor para ativar ou desativar a lembrança de senha.
+         Estilizado com classe 'switch' e 'slider' para parecer um botão deslizante, o que é intuitivo em telas de toque. -->
     <form>
         <label class="switch">
             <p><input type="checkbox" name="lsenha" id="lsenha"><span class="slider round"></span></p>
         </label>
     </form>
 
+    <!-- Botão de envio do formulário, redireciona para o menu da pessoa jurídica.
+         O botão é grande e centralizado, facilitando o clique em dispositivos móveis. -->
     <form action="menucnpj_t19.html">
         <p><input type="submit" value="Entrar" class="inicio" name="entrar" id="entrar"></p>
     </form>
 
+    <!-- Links adicionais para recuperação de senha e cadastro.
+         Usam espaços não quebráveis (&nbsp) para posicionamento, o que pode ser substituído por flexbox para melhor controle em CSS. -->
     &nbsp &nbsp<a href="esqsenha_tx.html" style="color: black;">Esqueceu sua senha?</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  
     <a href="cadastro_tx.html" style="color: black;">Cadastre-se!</a>
-    
 </body>
 </html>
