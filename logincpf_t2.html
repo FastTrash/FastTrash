@@ -7,34 +7,52 @@
     <title>Login</title>
 </head>
 <body>
+    <!-- Imagem do logotipo centralizada por causa da classe .logo -->
     <img class="logo" src="imgs/logo.jpeg" alt="Logo">
 
+    <!-- Título da página, centralizado e com espaçamento superior por causa da classe .titulo -->
     <h1 class="titulo">Login</h1>
 
+    <!-- Campo de entrada para CPF, com rótulo estilizado pela classe .subtitulo -->
     <form>
         <label class="subtitulo" for="cpf">CPF</label>
-        <p><input class="cxtxt" type="text" name="cpf" id="cpf" placeholder="000.000.000-00"></p>
+        <p>
+            <!-- Campo de texto centralizado e com aparência personalizada pela classe .cxtxt -->
+            <input class="cxtxt" type="text" name="cpf" id="cpf" placeholder="000.000.000-00">
+        </p>
     </form>
 
+    <!-- Campo de entrada para senha, com mesmo estilo do campo de CPF -->
     <form>
         <label class="subtitulo" for="senha">Senha</label>
-        <p><input class="cxtxt" type="text" name="senha" id="senha" placeholder="Insira sua Senha"></p>
+        <p>
+            <input class="cxtxt" type="password" name="senha" id="senha" placeholder="Insira sua Senha">
+        </p>
     </form>
 
+    <!-- Texto indicando a opção de lembrar login -->
     <p style="font-weight: 900;">Lembrar?</p>
 
+    <!-- Interruptor visual personalizado para marcar a opção de lembrar senha -->
     <form>
         <label class="switch">
-            <p><input type="checkbox" name="lsenha" id="lsenha"><span class="slider round"></span></p>
+            <!-- O input checkbox fica oculto; o controle visual é feito pela span com a classe .slider -->
+            <p><input type="checkbox" name="lsenha" id="lsenha">
+            <span class="slider round"></span></p>
         </label>
     </form>
 
+    <!-- Botão para enviar o formulário e prosseguir para a próxima página do usuário logado -->
     <form action="menucpf_t3.html">
-        <p><input type="submit" value="Entrar" class="inicio" name="entrar" id="entrar"></p>
+        <p>
+            <input type="submit" value="Entrar" class="inicio" name="entrar" id="entrar">
+        </p>
     </form>
 
-    &nbsp &nbsp<a href="esqsenha_tx.html" style="color: black;">Esqueceu sua senha?</a>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  
+    <!-- Links para recuperação de senha e criação de nova conta, com espaçamento manual -->
+    &nbsp &nbsp
+    <a href="esqsenha_tx.html" style="color: black;">Esqueceu sua senha?</a>
+    &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp  
     <a href="cadastro_tx.html" style="color: black;">Cadastre-se!</a>
-    
 </body>
 </html>
