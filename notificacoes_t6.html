@@ -7,13 +7,23 @@
     <title>Menu</title>
 </head>
 <body>
+    <!-- Botão de imagem (avatar) que leva o usuário para a página de perfil. 
+         A imagem é clicável por causa do input type="image", facilitando o toque em telas pequenas. -->
     <form action="perfil.html">
         <input type="image" class="avatar" src="imgs/avatar.jpeg" alt="Submit">
     </form>
 
+    <!-- Imagem ilustrativa indicando notificações, usada como destaque visual central na tela -->
     <img class="notif" src="imgs/notif.png" alt="Logo">
 
-    <h2 class="titulo" style="margin-top: 0px;" >Não há novas mensagens</h2>
-    <h3 class="titulo" style="color: dimgrey; margin-top: 0px;">Nenhuma mensagem nova disponível no momento. Volte em breve para ver as atualizações.</h3>
+    <!-- Título principal informando que não há novas mensagens. 
+         Usa a classe 'titulo' para centralização e destaque, com margem superior ajustada para remover espaçamento extra -->
+    <h2 class="titulo" style="margin-top: 0px;">Não há novas mensagens</h2>
+
+    <!-- Subtítulo explicativo em tom mais suave (cor cinza) com mensagem adicional ao usuário.
+         O texto está centralizado por causa da classe 'titulo' e o estilo embutido remove margens desnecessárias -->
+    <h3 class="titulo" style="color: dimgrey; margin-top: 0px;">
+        Nenhuma mensagem nova disponível no momento. Volte em breve para ver as atualizações.
+    </h3>
 </body>
 </html>
