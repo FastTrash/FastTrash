@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+    <title>Cadastro</title>
+</head>
+<body>
+    <!-- Título principal -->
+    <h1 class="titulo" style="margin-top: 20px; margin-bottom: 45px;">Cadastro</h1>
+
+    <!-- Botões de tipo de usuário lado a lado -->
+    <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 20px; margin-top: 30px;">
+        <button type="button" class="inicio" style="width: 130px;">Pessoa Física</button>
+        <button type="button" class="inicio" style="width: 130px;">Pessoa Jurídica</button>
+    </div>
+
+    <!-- Checkbox: é coletor -->
+    <p style="text-align: left; margin-left: 25px;">
+        <input type="checkbox" id="coletor" name="coletor">
+        <label for="coletor">Você é coletor?</label>
+    </p>
+
+    <!-- Formulário de cadastro -->
+    <form action="cadnum_t14.html">
+        <label class="subtitulo" for="nome">Nome Completo</label>
+        <p>
+            <input class="cxtxt" type="text" id="nome" name="nome" placeholder="Nome completo">
+        </p>
+
+        <label class="subtitulo" for="cpf">CPF</label>
+        <p>
+            <input class="cxtxt" type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+        </p>
+
+        <label class="subtitulo" for="email">E-mail</label>
+        <p>
+            <input class="cxtxt" type="email" id="email" name="email" placeholder="exemplo@email.com">
+        </p>
+
+        <label class="subtitulo" for="celular">Celular</label>
+        <p>
+            <input class="cxtxt" type="tel" id="celular" name="celular" placeholder="(00) 00000-0000">
+        </p>
+
+        <!-- Aceite dos termos -->
+        <p style="text-align: left; margin-left: 25px;">
+            <input type="checkbox" id="termos" name="termos">
+            <label for="termos">Li e concordo com os termos de uso.</label>
+        </p>
+
+        <!-- Botão de prosseguir -->
+        <p>
+            <input type="submit" value="Prosseguir" class="inicio">
+        </p>
+    </form>
+
+</body>
+</html>
