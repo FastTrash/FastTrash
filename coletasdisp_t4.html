@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,52 +8,62 @@
 </head>
 <body>
 
+    <!-- Cabeçalho -->
     <header class="header">
-
         <h1 class="title">Coletas Disponíveis</h1>
-
         <img class="lcoleta" src="imgs/caixa.png" alt="Logo">
+    </header><br><br><br><br><br>
 
-        
-
-        </header><br><br><br><br><br>
-
-    <h4 class="rcoleta"><img class="pxcoldireita" src="imgs/pesquisa.png" alt="caixa">
+    <!-- Campo de pesquisa -->
+    <h4 class="rcoleta">
+        <img class="pxcoldireita" src="imgs/pesquisa.png" alt="Ícone calendário">
         <form>
-            <input class="pesquisa" type="text" value="Pesquisar no Histórico...">
+            <input class="pesquisa" type="text" value="Pesquisar coletas...">
         </form>
     </h4>
 
+    <!-- Cartão de coleta com menu de opções -->
+    <div class="coletas2">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <strong>Data</strong><br>
+                08/06/2024<br><br>
+                Rua Exemplo, 123<br>
+                Bairro Exemplo - SCS<br>
+                00000-000
+            </div>
+            <div style="position: relative;">
+                <img class="pxcoldireita" src="imgs/config.png" alt="Mais opções" onclick="toggleMenu(this)">
+                <div class="dropdown" style="display:none; position:absolute; top:25px; right:0px; background:white; border:1px solid #ccc; border-radius:8px; width:120px; z-index:1;">
+                    <button style="width:100%; border:none; padding:10px;">Aceitar coleta</button>
+                    <button style="width:100%; border:none; padding:10px;">Recusar coleta</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Duplicar o bloco acima para mais coletas -->
+    <div class="coletas2">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <strong>Data</strong><br>
+                08/06/2024<br><br>
+                Rua Exemplo, 123<br>
+                Bairro Exemplo - SCS<br>
+                00000-000
+            </div>
+            <div style="position: relative;">
+                <img class="pxcoldireita" src="imgs/config.png" alt="Mais opções" onclick="toggleMenu(this)">
+                <div class="dropdown" style="display:none; position:absolute; top:25px; right:0px; background:white; border:1px solid #ccc; border-radius:8px; width:120px; z-index:1;">
+                    <button style="width:100%; border:none; padding:10px;">Aceitar coleta</button>
+                    <button style="width:100%; border:none; padding:10px;">Recusar coleta</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
-
-
-    <h4 class="coletas2"><img class="pxcoldireita" src="imgs/pontos.png" alt="caixa">
-        Data<br>14/05/2025<br><br>Rua Exemplo, 123<br>Bairro Exemplo, SCS<br>00000-000</h4>
-
-    <h4 class="coletas2"><img class="pxcoldireita" src="imgs/pontos.png" alt="caixa">
-        Data<br>14/05/2025<br><br>Rua Exemplo, 123<br>Bairro Exemplo, SCS<br>00000-000</h4>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- Footer padrão -->
     <footer class="footer">
-
         <div class="row">
             <div class="column">
                 <form action="menucpf_t3.html">
@@ -73,9 +83,25 @@
                     <label class="cfooter" for="config">Opções</label>
                 </form>
             </div>
-          </div>
-        
+        </div>
     </footer>
+
+    <!-- Script simples para mostrar/ocultar menu -->
+    <script>
+        function toggleMenu(img) {
+            const menu = img.nextElementSibling;
+            const isVisible = menu.style.display === "block";
+            document.querySelectorAll('.dropdown').forEach(el => el.style.display = 'none');
+            if (!isVisible) menu.style.display = "block";
+        }
+
+        // Fecha o menu se clicar fora
+        window.addEventListener('click', function(e) {
+            if (!e.target.matches('.pxcoldireita')) {
+                document.querySelectorAll('.dropdown').forEach(el => el.style.display = 'none');
+            }
+        });
+    </script>
 
 </body>
 </html>
