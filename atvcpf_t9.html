@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+    <title>Atividades</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1 class="title">Atividades</h1>
+        <img class="lcoleta" src="imgs/atv.png" alt="Ícone atividades">
+    </header><br><br><br><br><br>
+
+    <!-- Filtro de histórico -->
+    <h4 class="rcoleta">
+        <form>
+            <select class="pesquisa">
+                <option>Históricos anteriores</option>
+            </select>
+        </form>
+    </h4>
+
+    <!-- Blocos de atividades -->
+    <div class="coletas2">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <strong>Data</strong><br>
+                08/06/2024
+            </div>
+            <div style="position: relative;">
+                <img class="pxcoldireita" src="imgs/config.png" alt="Mais opções" onclick="toggleMenu(this)">
+                <div class="dropdown" style="display:none; position:absolute; top:25px; right:0px; background:white; border:1px solid #ccc; border-radius:8px; width:120px; z-index:1;">
+                    <button style="width:100%; border:none; padding:10px; color: red;">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coletas2">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <strong>Data</strong><br>
+                16/04/2024
+            </div>
+            <div style="position: relative;">
+                <img class="pxcoldireita" src="imgs/config.png" alt="Mais opções" onclick="toggleMenu(this)">
+                <div class="dropdown" style="display:none; position:absolute; top:25px; right:0px; background:white; border:1px solid #ccc; border-radius:8px; width:120px; z-index:1;">
+                    <button style="width:100%; border:none; padding:10px; color: red;">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coletas2">
+        <div style="display: flex; justify-content: space-between;">
+            <div>
+                <strong>Data</strong><br>
+                02/02/2024
+            </div>
+            <div style="position: relative;">
+                <img class="pxcoldireita" src="imgs/config.png" alt="Mais opções" onclick="toggleMenu(this)">
+                <div class="dropdown" style="display:none; position:absolute; top:25px; right:0px; background:white; border:1px solid #ccc; border-radius:8px; width:120px; z-index:1;">
+                    <button style="width:100%; border:none; padding:10px; color: red;">Excluir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer reutilizado -->
+    <footer class="footer">
+        <div class="row">
+            <div class="column">
+                <form action="menucpf_t3.html">
+                    <input id="menu" type="image" class="imgf" src="imgs/menu.png" alt="Submit">
+                    <label class="cfooter" for="menu">&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;</label>
+                </form>
+            </div>
+            <div class="column">
+                <form action="atvcpf_t9.html">
+                    <input id="atv" type="image" class="imgf" src="imgs/atv.png"
+                      style="border: 2px solid dimgrey; border-radius: 50%;" alt="Submit">
+                    <label class="cfooter" for="atv">Atividades</label>
+                </form>
+            </div>
+            <div class="column">
+                <form action="cfgcpf_t?.html">
+                    <input id="config" type="image" class="imgf" src="imgs/config.png" alt="Submit">
+                    <label class="cfooter" for="config">Opções</label>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para menu suspenso -->
+    <script>
+        function toggleMenu(img) {
+            const menu = img.nextElementSibling;
+            const isVisible = menu.style.display === "block";
+            document.querySelectorAll('.dropdown').forEach(el => el.style.display = 'none');
+            if (!isVisible) menu.style.display = "block";
+        }
+
+        window.addEventListener('click', function(e) {
+            if (!e.target.matches('.pxcoldireita')) {
+                document.querySelectorAll('.dropdown').forEach(el => el.style.display = 'none');
+            }
+        });
+    </script>
+
+</body>
+</html>
