@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+    <title>Informações Pessoais</title>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="header">
+        <h1 class="title">Informações Pessoais</h1>
+        <img class="lcoleta" src="imgs/config.png" alt="Ícone de perfil">
+    </header><br><br><br><br><br>
+
+    <!-- Formulário de Informações Pessoais -->
+    <div class="coletas2" style="text-align: center; padding: 20px;">
+        <img src="imgs/user.png" alt="Avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px;">
+        <p><a href="#" style="font-size: 14px; text-decoration: underline;">Alterar foto.</a></p>
+
+        <form>
+            <input class="cxtxt" type="text" name="nome" placeholder="Nome Completo"><br><br>
+
+            <div style="display: flex; gap: 10px;">
+                <input class="cxtxt" type="text" name="logradouro" placeholder="Logradouro" style="flex: 2;">
+                <input class="cxtxt" type="text" name="numero" placeholder="Número" style="flex: 1;">
+            </div><br>
+
+            <div style="display: flex; gap: 10px;">
+                <input class="cxtxt" type="text" name="bairro" placeholder="Bairro" style="flex: 1;">
+                <input class="cxtxt" type="text" name="cidade" placeholder="Cidade" style="flex: 1;">
+            </div><br>
+
+            <input class="cxtxt" type="text" name="cep" placeholder="CEP"><br><br>
+
+            <p style="text-align: right; margin: 0;">
+                <a href="novasenha_t13" style="font-size: 14px; text-decoration: underline;">Alterar senha?</a>
+            </p><br>
+
+            <input type="submit" value="Salvar" class="inicio">
+        </form>
+    </div>
+
+</body>
+</html>
