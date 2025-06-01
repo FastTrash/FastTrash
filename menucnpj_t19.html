@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Menu CNPJ</title>
+</head>
+<body>
 
+    <!-- Topo: avatar à esquerda, menu hambúrguer à direita -->
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 16px;">
+        <form action="perfil_t5.html">
+            <input type="image" class="avatar" src="imgs/avatar.jpeg" alt="Perfil" />
+        </form>
+    </div>
+
+    <!-- Saudação -->
+    <h2 class="textocanto">Olá [Nome],<br>O que você gostaria de fazer?</h2>
+
+    <!-- Botão: Anunciar Coleta -->
+    <form action="anunciarcoleta.html">
+        <input type="image" class="coleta" src="imgs/reciclar.png" alt="Anunciar Coleta" />
+        <h2 class="titulocoleta">Anunciar Coleta</h2>
+    </form>
+
+    <!-- Botão: Coletas Disponíveis -->
+    <form action="coletasdisp_t4.html">
+        <input type="image" class="coleta" src="imgs/caixa.png" alt="Coletas Disponíveis" />
+        <h2 class="titulocoleta">Coletas Disponíveis</h2>
+    </form>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="row">
+            <!-- Ícone do menu principal - retorna para esta mesma tela -->
+            <div class="column">
+                <form action="menucnpj_t19.html">
+                    <input id="menu" type="image" class="imgf" src="imgs/menu.png"
+                        style="border: 2px solid dimgrey; border-radius: 50%;" alt="Menu" />
+                    <label class="cfooter" for="menu">&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;</label>
+                </form>
+            </div>
+
+            <!-- Ícone de atividades -->
+            <div class="column">
+                <form action="atvcnpj_t9.html">
+                    <input id="atv" type="image" class="imgf" src="imgs/atv.png" alt="Atividades" />
+                    <label class="cfooter" for="atv">Atividades</label>
+                </form>
+            </div>
+
+            <!-- Ícone de configurações -->
+            <div class="column">
+                <form action="cfgcnpj_t?.html">
+                    <input id="config" type="image" class="imgf" src="imgs/config.png" alt="Opções" />
+                    <label class="cfooter" for="config">Opções</label>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
