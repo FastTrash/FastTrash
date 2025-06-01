@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Tela Anúncio</title>
+</head>
+<body>
+
+    <!-- Topo: avatar + nome do usuário -->
+    <div style="display: flex; align-items: center; justify-content: flex-start; padding: 10px 16px;">
+        <img src="imgs/avatar.jpeg" class="avatar" alt="Perfil" />
+        <h2 class="title">[Nome completo]</h2>
+    </div>
+
+    <!-- Campo: Planeje seu anúncio -->
+    <div style="padding: 20px;">
+        <input class="cxtxt" type="text" placeholder="Planeje seu anúncio" />
+    </div>
+
+    <!-- Campo: Quando? -->
+    <div style="padding: 0 20px 10px 20px;">
+        <select class="cxtxt">
+            <option selected>Agora</option>
+            <option>Agendar horário</option>
+        </select>
+    </div>
+
+    <!-- Campo: Local de coleta -->
+    <div style="padding: 0 20px 10px 20px;">
+        <input class="cxtxt" type="text" placeholder="Local de coleta" />
+    </div>
+
+    <!-- Título: Descrição do anúncio -->
+    <h3 class="subtitulo" style="margin-left: 20px;">Descrição do anúncio</h3>
+
+    <!-- Itens de coleta -->
+    <div style="padding: 0 20px;">
+        <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+            <input class="cxtxt" type="text" placeholder="Papel" style="flex: 1;" />
+            <input class="cxtxt" type="number" placeholder="Qtd." value="5" style="width: 60px;" />
+        </div>
+        <div style="display: flex; gap: 10px; margin-bottom: 10px;">
+            <input class="cxtxt" type="text" placeholder="Plástico" style="flex: 1;" />
+            <input class="cxtxt" type="number" placeholder="Qtd." value="3" style="width: 60px;" />
+        </div>
+        <div>
+            <select class="cxtxt">
+                <option selected>Outro nome de item</option>
+                <option>Vidro</option>
+                <option>Metal</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Botão de ação -->
+    <div style="padding: 20px;">
+        <button class="inicio">Finalizar anúncio</button>
+    </div>
+
+    <!-- Rodapé (reutilizado do exemplo) -->
+    <footer class="footer">
+        <div class="row">
+            <div class="column">
+                <form action="menucnpj_t19.html">
+                    <input id="menu" type="image" class="imgf" src="imgs/menu.png"
+                        style="border: 2px solid dimgrey; border-radius: 50%;" alt="Menu" />
+                    <label class="cfooter" for="menu">&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;</label>
+                </form>
+            </div>
+
+            <div class="column">
+                <form action="atvcnpj_t9.html">
+                    <input id="atv" type="image" class="imgf" src="imgs/atv.png" alt="Atividades" />
+                    <label class="cfooter" for="atv">Atividades</label>
+                </form>
+            </div>
+
+            <div class="column">
+                <form action="cfgcnpj_t?.html">
+                    <input id="config" type="image" class="imgf" src="imgs/config.png" alt="Opções" />
+                    <label class="cfooter" for="config">Opções</label>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
