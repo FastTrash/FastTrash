@@ -1,46 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css"/>
-    <title>Informações Pessoais</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>Informações Pessoais</title>
+  <style>
+    .form-wrapper {
+      max-width: 360px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      position: relative;
+    }
+
+    .header h1 {
+      flex-grow: 1;
+      text-align: center;
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .gear-icon {
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      left: 20px;
+    }
+
+    .form-wrapper img.avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: block;
+      margin: 10px auto 5px;
+    }
+
+    .form-wrapper a {
+      font-size: 14px;
+      text-decoration: underline;
+    }
+
+    .form-wrapper input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .row input {
+      flex: 1;
+    }
+
+    .save-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #666;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      font-size: 16px;
+    }
+
+    .alterar-senha {
+      text-align: right;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header class="header">
-        <h1 class="title">Informações Pessoais</h1>
-        <img class="lcoleta" src="imgs/config.png" alt="Ícone de perfil">
-    </header><br><br><br><br><br>
+  <!-- Cabeçalho com ícone engrenagem à esquerda -->
+  <header class="header">
+    <img class="gear-icon" src="imgs/config.png" alt="Configuração" />
+    <h1>Informações Pessoais</h1>
+  </header>
 
-    <!-- Formulário de Informações Pessoais -->
-    <div class="coletas2" style="text-align: center; padding: 20px;">
-        <img src="imgs/user.png" alt="Avatar" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px;">
-        <p><a href="#" style="font-size: 14px; text-decoration: underline;">Alterar foto.</a></p>
+  <!-- Formulário com estilo alinhado ao mockup -->
+  <div class="form-wrapper">
+    <img class="avatar" src="imgs/user.png" alt="Avatar" />
+    <p><a href="#">Alterar foto.</a></p>
 
-        <form>
-            <input class="cxtxt" type="text" name="nome" placeholder="Nome Completo"><br><br>
+    <form>
+      <input class="cxtxt" type="text" name="nome" placeholder="Nome Completo" />
 
-            <div style="display: flex; gap: 10px;">
-                <input class="cxtxt" type="text" name="logradouro" placeholder="Logradouro" style="flex: 2;">
-                <input class="cxtxt" type="text" name="numero" placeholder="Número" style="flex: 1;">
-            </div><br>
+      <div class="row">
+        <input class="cxtxt" type="text" name="logradouro" placeholder="Logradouro" />
+        <input class="cxtxt" type="text" name="numero" placeholder="Número" />
+      </div>
 
-            <div style="display: flex; gap: 10px;">
-                <input class="cxtxt" type="text" name="bairro" placeholder="Bairro" style="flex: 1;">
-                <input class="cxtxt" type="text" name="cidade" placeholder="Cidade" style="flex: 1;">
-            </div><br>
+      <div class="row">
+        <input class="cxtxt" type="text" name="bairro" placeholder="Bairro" />
+        <input class="cxtxt" type="text" name="cidade" placeholder="Cidade" />
+      </div>
 
-            <input class="cxtxt" type="text" name="cep" placeholder="CEP"><br><br>
+      <input class="cxtxt" type="text" name="cep" placeholder="CEP" />
 
-            <p style="text-align: right; margin: 0;">
-                <a href="novasenha_t13" style="font-size: 14px; text-decoration: underline;">Alterar senha?</a>
-            </p><br>
+      <p class="alterar-senha">
+        <a href="novasenha_t13">Alterar senha?</a>
+      </p>
 
-            <input type="submit" value="Salvar" class="inicio">
-        </form>
-    </div>
+      <input type="submit" value="Salvar" class="save-btn" />
+    </form>
+  </div>
 
 </body>
 </html>
