@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css"/>
+    <title>Menu</title>
+</head>
+<body>
 
+    <!-- Botão com imagem de avatar; envia o usuário para a página de perfil ao ser clicado -->
+    <form action="perfil_t5.html">
+        <input type="image" class="avatar" src="imgs/avatar.jpeg" alt="Submit">
+    </form>
+
+    <!-- Saudação personalizada ao usuário; posicionada à esquerda e estilizada com margens e peso na fonte -->
+    <h2 class="textocanto">Olá [Nome], <br>O que você <br>gostaria de fazer?</h2>
+
+    <!-- Botão em forma de imagem que leva à tela de coletas disponíveis -->
+    <form action="coletasdisp_t4.html">
+        <input type="image" class="coleta" src="imgs/reciclar.png" alt="Submit">
+        <!-- Título centralizado abaixo da imagem do botão -->
+        <h2 class="titulocoleta">Coletas Disponíveis</h2>
+    </form>
+
+    <!-- Rodapé fixo na parte inferior da tela com três ícones navegáveis (Menu, Atividades, Opções) -->
+    <footer class="footer">
+        <div class="row">
+            <!-- Ícone do menu principal -->
+            <div class="column">
+                <form action="menucpf_t3.html">
+                    <input id="menu" type="image" class="imgf" src="imgs/menu.png"
+                        style="border: 2px solid dimgrey; border-radius: 50%;" alt="Submit">
+                    <label class="cfooter" for="menu">&nbsp;&nbsp;&nbsp;Menu&nbsp;&nbsp;&nbsp;</label>
+                </form>
+            </div>
+
+            <!-- Ícone das atividades do usuário -->
+            <div class="column">
+                <form action="atvcpf_t9.html">
+                    <input id="atv" type="image" class="imgf" src="imgs/atv.png" alt="Submit">
+                    <label class="cfooter" for="atv">Atividades</label>
+                </form>
+            </div>
+
+            <!-- Ícone das configurações ou opções -->
+            <div class="column">
+                <form action="cfgcpf_t?.html">
+                    <!-- Ainda precisa ajustado manualmente -->
+                    <input id="config" type="image" class="imgf" src="imgs/config.png" alt="Submit">
+                    <label class="cfooter" for="config">Opções</label>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
